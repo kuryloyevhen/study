@@ -1,0 +1,35 @@
+<div class='form'>
+   <div class='adding-form' [formGroup]='addUserForm'>
+         <mat-form-field class='form-option'>
+            <input matInput placeholder='User name' type="text" formControlName='name'>
+         </mat-form-field>
+         <mat-form-field class='form-option'>
+            <input matInput placeholder='User password' type="password" formControlName='password'>
+         </mat-form-field>
+         <mat-form-field class='form-option'>
+            <input matInput placeholder='User email' type="email" formControlName='email'>
+         </mat-form-field>
+         <mat-form-field class='form-option'>
+            <input matInput placeholder='User priveleges' type="text" formControlName='priveleges'>
+         </mat-form-field>
+         <button mat-raised-button color='primary' (click)='createUser()'>Create new user</button>
+   </div>
+   
+   
+</div>
+
+<div class='users'>
+   <button mat-raised-button color='primary' class='btn' (click)='getUsers()'>Get all users</button>
+   <mat-expansion-panel *ngFor='let user of users' class="user">
+      <mat-expansion-panel-header>
+         <span>{{user.name}}</span>
+         <button mat-button color='warn' (click)='deleteUser($event, user.id)'>Delete</button>
+         <button mat-button color='accent' (click)='openDialog($event, user.id)'>Update</button>
+      </mat-expansion-panel-header>
+      <mat-list role='list'>
+         <mat-list-item>Password: {{user.password}}</mat-list-item>
+         <mat-list-item>Email: {{user.email}}</mat-list-item>
+         <mat-list-item>Role: {{user.priveleges}}</mat-list-item>
+      </mat-list>
+   </mat-expansion-panel>
+</div>

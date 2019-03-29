@@ -1,0 +1,11 @@
+<nav class="nav">
+   <div class='nav-bar'>
+      <a routerLink='/home' routerLinkActive='active' class='link'>Home</a>
+      <a routerLink='/user' routerLinkActive='active' class='link'>User</a>
+      <a routerLink='/admin' routerLinkActive='active' class='link'>Admin</a>
+   </div>
+   <div class='btn-group'>
+      <button mat-flat-button color='primary' class='btn' (click)='openDialog()'>Login</button>
+      <button mat-flat-button color='accent' (click)='logout()'>Logout</button>
+   </div>
+</nav>

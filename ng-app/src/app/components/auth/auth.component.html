@@ -1,0 +1,13 @@
+
+<div class='auth-panel' [formGroup]='authForm'>
+   <mat-form-field class='form-field'>
+      <input type="text" matInput placeholder="User name" formControlName='name'>
+   </mat-form-field> 
+   <mat-form-field class="form-field">
+      <input type="password" matInput placeholder="User password" formControlName='password'>
+   </mat-form-field>
+   <div class='btn-group'>
+      <button mat-raised-button color='accent' class='btn' (click)='login()'>Login</button>
+      <button mat-raised-button color='primary' [mat-dialog-close]='true'>Close</button>
+   </div>
+</div>

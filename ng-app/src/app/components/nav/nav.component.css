@@ -1,0 +1,33 @@
+
+.nav { 
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   height: 50px;
+   width: 100%;
+   background-color: #cdddd3;
+}
+
+.btn-group {
+   position: absolute;
+   top: 8px;
+   right: 50px;
+}
+
+.btn {
+   margin-right: 10px;
+}
+
+.nav-bar {
+   position: absolute;
+   top: 20px;
+   left: 50px;
+}
+
+.link {
+   text-decoration: none;
+   color: #000;
+   display: inline-block;
+   margin-right: 30px;
+}

@@ -1,0 +1,32 @@
+
+.form {
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.adding-form {
+   flex: 45%;
+}
+
+.updating-form {
+   flex: 45%;
+}
+
+.form-option {
+   display: block;
+}
+
+.users {
+   width: 500px;
+}
+
+.user {
+   margin-bottom: 5px;
+}
+
+.btn {
+   margin-bottom: 10px;
+}

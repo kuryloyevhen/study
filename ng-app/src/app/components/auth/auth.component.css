@@ -1,0 +1,19 @@
+
+.form-field {
+   display: block;
+}
+
+.auth-panel {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   padding: 10px;
+   background-color: #CCE5FF;
+}
+
+.btn-group {
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+}

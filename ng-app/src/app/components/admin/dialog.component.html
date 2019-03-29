@@ -1,0 +1,17 @@
+
+<div class='dialog' [formGroup]='updateUserForm'>
+      <mat-form-field class='form-option'>
+         <input matInput placeholder='User name' type="text" formControlName='name' #user>
+      </mat-form-field>
+      <mat-form-field class='form-option'>
+         <input matInput placeholder='User password' type="password" formControlName='password'>
+      </mat-form-field>
+      <mat-form-field class='form-option'>
+         <input matInput placeholder='User email' type="email" formControlName='email'>
+      </mat-form-field>
+      <mat-form-field class='form-option'>
+         <input matInput placeholder='User priveleges' type="text" formControlName='priveleges'>
+      </mat-form-field>
+      <button mat-raised-button color='primary' (click)='updateUser()'>Update</button>
+      <button mat-raised-button color='primary' [mat-dialog-close]='true'>Close</button>
+</div>
