@@ -1,5 +1,5 @@
 const app = require('./routes');
-const model = require('./model');
+const model = require('./sequelize');
 const http = require('http');
 const port = 3000;
 const host = '127.0.0.1';
